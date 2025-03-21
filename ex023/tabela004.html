@@ -16,8 +16,14 @@
             position: relative;
         }
 
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
         td, th{
-            border: 1px solid black;
+            border: 1px solid gray;
             padding: 8px;
             text-align: auto;
         }
@@ -30,49 +36,56 @@
 </head>
 <body>
     <table>
-        <tr>
-            <th>Grupo</th>
-            <th>Nomes</th>
-            <th class="filmes" colspan="3" scope="col" style="width: 200px">Filmes</th>
-        </tr>
-        <tr>
-            <td class="grupo" rowspan="3">Mulheres</td>
-            <td>Ana</td>
-            <td>Alien</td>
-            <td>Rambo</td>
-            <td>Vingadores</td>
-        </tr>
-        <tr>
-            <td>Bia</td>
-            <td>Hulk</td>
-            <td>Inception</td>
-            <td>Batman</td>
-        </tr>
-        <tr>
-            <td>Claudia</td>
-            <td>Oblivion</td>
-            <td>Matrix</td>
-            <td>Big Hero</td>
-        </tr>
-        <tr>
-            <td class="grupo" rowspan="3">Homens</td>
-            <td>Bruno</td>
-            <td>Intocaveis</td>
-            <td>Amnesia</td>
-            <td>Gladiador</td>
-        </tr>
-        <tr>
-            <td>Daniel</td>
-            <td>Wall-e</td>
-            <td>Old Boy</td>
-            <td>Dangal</td>
-        </tr>
-        <tr>
-            <td>Fabiano</td>
-            <td>Star Wars 5</td>
-            <td>Taxi Driver</td>
-            <td>Toy Story</td>
-        </tr>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th class="filmes" colspan="3" scope="colgroup" style="width: 200px">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="grupo" rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Bia</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th class="grupo" rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno</td>
+                <td>Intocaveis</td>
+                <td>Amnesia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>Wall-e</td>
+                <td>Old Boy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
